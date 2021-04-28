@@ -1,0 +1,177 @@
+nav {
+  background-color: var(--blackish);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 2px 4px var(--blackish);
+}
+
+nav > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.brand-name {
+  padding-left: 20px;
+  color: var(--white);
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-family: var(--krona-font);
+}
+
+.brand-name:hover {
+  color: var(--light-orange);
+}
+
+.dropdown {
+  display: inline-block;
+  padding: 20px;
+  text-align: right;
+}
+
+.menu,
+.menu-off {
+  font-size: 2rem;
+  color: var(--light-orange);
+}
+
+.menu-off {
+  display: none;
+}
+
+.dropdown {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  text-align: center;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 75px;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding-bottom: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: var(--blackish);
+}
+
+.list-item {
+  line-height: 3;
+  border-bottom: 1px solid var(--dark-green);
+}
+
+.list-item > a {
+  text-decoration: none;
+  color: white;
+}
+
+.list-item > a:hover,
+.dropdown-social > i:hover {
+  color: var(--light-orange);
+}
+
+.dropdown-social {
+  padding: 20px;
+  background-color: var(--blackish);
+}
+
+.dropdown-social > i {
+  margin: 0 20px;
+  color: var(--white);
+}
+
+/* ==================================== */
+/* mobile view */
+/* ==================================== */
+
+@media screen and (max-width: 991px) {
+  .dropdown:hover .menu {
+    display: none;
+  }
+
+  .dropdown:hover .menu-off {
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+
+/* ==================================== */
+/* tablet view */
+/* ==================================== */
+
+@media screen and (min-width: 768px) {
+  nav > .container {
+    max-width: 720px;
+    padding: 0 30px;
+  }
+}
+
+/* ==================================== */
+/* laptop view */
+/* ==================================== */
+
+@media screen and (min-width: 992px) {
+  nav > .container {
+    max-width: 920px;
+    padding: 10px 30px;
+  }
+
+  .brand-name {
+    padding-left: 0;
+  }
+
+  .dropdown {
+    width: 70%;
+    border-bottom: none;
+    padding: 0;
+  }
+
+  .menu,
+  .menu-off {
+    display: none;
+  }
+
+  .dropdown-content {
+    display: flex;
+    position: static;
+    box-shadow: none;
+    justify-content: space-between;
+  }
+
+  .dropdown-list {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+  }
+
+  .list-item {
+    border-bottom: none;
+  }
+
+  .dropdown-social {
+    background-color: var(--blackish);
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .dropdown-social > i {
+    margin: 0 10px;
+  }
+}
