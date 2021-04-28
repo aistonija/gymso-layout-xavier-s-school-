@@ -1,0 +1,24 @@
+:root {
+  /* accent colors */
+  --orange: #d33907;
+  --light-orange: #ff5921;
+  --dark-red: #872302;
+  --dark-green: #008768;
+  --light-green: #06d4a4;
+
+  /* plain colors */
+  --white: #ffffff;
+  --blackish: #171819;
+  --about-bg-color: #f9f9f9;
+  --gray-color: #909090;
+  --link-color: #404040;
+  --p-color: #666262;
+  --tegomin-font: "New Tegomin", serif;
+  --roboto: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  transition: 200ms;
+  font-family: var(--roboto);
+}
