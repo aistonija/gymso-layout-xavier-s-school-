@@ -1,0 +1,73 @@
+.schedules {
+  background-color: var(--blackish);
+  padding: 50px 10px;
+}
+
+.schedules .text-content {
+  text-align: center;
+}
+
+.schedules .text-content p {
+  color: var(--p-color);
+  font-size: 1.2rem;
+}
+
+/* table styles */
+.table-container {
+  overflow-x: scroll;
+}
+
+table,
+th,
+td {
+  border: 1px solid var(--link-color);
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.table-container th,
+tbody > tr > td:first-child {
+  color: var(--white);
+  text-transform: uppercase;
+  background-color: var(--light-orange);
+  padding: 20px 25px;
+}
+
+.table-container th {
+  font-weight: 600;
+}
+
+tbody > tr > td:not(:first-child) {
+  padding: 25px;
+}
+
+tbody .time {
+  color: var(--p-color);
+  margin: 0;
+  padding-top: 20px;
+}
+
+.power__name {
+  margin: 0;
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+/* ==================================== */
+/* tablet view */
+/* ==================================== */
+
+@media screen and (min-width: 768px) {
+  .schedules > .container {
+    max-width: 720px;
+  }
+}
+
+/* ==================================== */
+/* laptop view */
+/* ==================================== */
+@media screen and (min-width: 992px) {
+  .schedules > .container {
+    max-width: 920px;
+  }
+}
