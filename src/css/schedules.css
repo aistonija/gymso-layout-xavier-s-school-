@@ -1,6 +1,11 @@
+.schedules > .container {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
 .schedules {
   background-color: var(--blackish);
-  padding: 50px 10px;
+  padding: 100px 10px;
 }
 
 .schedules .text-content {
