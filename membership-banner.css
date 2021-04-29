@@ -1,3 +1,8 @@
+.membership-banner > .container {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
 .membership-banner {
   background-color: var(--blackish);
   padding: 10px;
@@ -9,10 +14,11 @@
 
 .banner-title {
   font-family: var(--krona-font);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
-.banner-subtitle {
+.banner-subtitle,
+.working-hours {
   font-size: 1.5rem;
 }
 
@@ -33,6 +39,50 @@
 
 .working-hours {
   color: var(--white);
-  font-size: 1.5rem;
+
   font-weight: 600;
+}
+
+/* ==================================== */
+/* tablet view */
+/* ==================================== */
+
+@media screen and (min-width: 768px) {
+  .membership-banner > .container {
+    max-width: 720px;
+    padding: 100px 0px;
+    display: flex;
+  }
+
+  .join-membership,
+  .working-hours {
+    width: 50%;
+  }
+
+  .working-hours {
+    padding-left: 50px;
+    border-left: 1px solid var(--link-color);
+  }
+
+  .join-membership > .text-content {
+    margin-bottom: 50px;
+  }
+}
+
+/* ==================================== */
+/* laptop view */
+/* ==================================== */
+@media screen and (min-width: 992px) {
+  .membership-banner > .container {
+    max-width: 920px;
+  }
+
+  .join-membership {
+    padding-right: 100px;
+    width: 60%;
+  }
+
+  .working-hours {
+    width: 40%;
+  }
 }
