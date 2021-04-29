@@ -23,6 +23,10 @@
   font-family: var(--jura-font);
 }
 
+.text-uc {
+  text-transform: uppercase;
+}
+
 /* ==================================== */
 /* buttons */
 /* ==================================== */
@@ -34,7 +38,6 @@
   padding: 15px 20px;
   border-radius: 5px;
   font-weight: 600;
-  margin: 0 5px;
 }
 
 .btn--transparent {
@@ -53,4 +56,19 @@
 .btn--orange:hover {
   border: 1px solid var(--white);
   background-color: var(--white);
+}
+
+.btn--wide {
+  width: 100%;
+}
+
+.btn--filled--orange {
+  text-align: center;
+  color: var(--white);
+  background-color: var(--light-orange);
+}
+
+.btn--filled--orange:hover {
+  background-color: var(--white);
+  color: var(--light-orange);
 }

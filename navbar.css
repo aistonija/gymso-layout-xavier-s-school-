@@ -158,6 +158,10 @@ nav > .container {
     width: 75%;
   }
 
+  .dropdown-list > .list-item:first-child a {
+    color: var(--light-orange);
+  }
+
   .list-item {
     border-bottom: none;
   }
