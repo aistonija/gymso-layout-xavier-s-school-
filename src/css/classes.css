@@ -1,0 +1,133 @@
+.classes {
+  padding: 50px 10px;
+}
+
+.classes > .container {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.classes .text-content {
+  padding-bottom: 50px;
+}
+
+.classes .greeting,
+.classes .text-content p {
+  text-align: center;
+}
+
+.classes .greeting {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.classes .text-content p {
+  font-size: 1.5rem;
+  color: var(--p-color);
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+/* classes list information */
+
+.class {
+  box-shadow: 0 2px 4px gray;
+  margin-bottom: 50px;
+}
+
+.class > .img-container {
+  height: 500px;
+}
+
+.class > .img-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.class .text-container {
+  padding: 20px;
+  position: relative;
+}
+
+.class__name {
+  font-family: var(--krona-font);
+  font-size: 1.2rem;
+}
+
+.class__teacher {
+  font-weight: 900;
+  color: var(--p-color);
+}
+
+.class__teacher > span {
+  color: var(--blackish);
+  font-weight: bold;
+}
+
+.class-price {
+  width: 60px;
+  height: 60px;
+  background-color: var(--orange);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.price__tag {
+  color: var(--white);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+/* ==================================== */
+/* tablet view */
+/* ==================================== */
+
+@media screen and (min-width: 768px) {
+  .classes > .container {
+    max-width: 720px;
+  }
+
+  .classes-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .class > .img-container {
+    height: 250px;
+  }
+
+  .class {
+    width: calc(50% - 10px);
+  }
+
+  .class-price {
+    top: 20px;
+    right: 20px;
+  }
+}
+
+/* ==================================== */
+/* laptop view */
+/* ==================================== */
+@media screen and (min-width: 992px) {
+  .classes > .container {
+    max-width: 920px;
+  }
+
+  .classes-info {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+
+  .class {
+    width: calc(33% - 10px);
+  }
+}
