@@ -1,7 +1,7 @@
 ### Initial setup
 
 - npm init
-- npm -i express
+- npm install express
 - add all files to src folder
 - create index.js and add following code:
 
